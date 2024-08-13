@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General rule */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+#root {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+/*to show sign section*/
+header .sign:hover {
+  z-index: 10;
+}
+
+header .sign:hover .list-lan {
+  z-index: 10;
+  display: block;
+}
+
+header .sign:hover ~ div {
+  z-index: 5;
+  display: block;
+}
+
+/*-------------------------------Login And Register Style --------------------------------------------------------------*/
+#email,
+#reg-email,
+#password,
+#reg-password,
+#name,
+#re-password {
+  outline: none;
+}
+
+.create-text::before {
+  margin-right: 5px;
+}
+.create-text::after {
+  margin-left: 5px;
+}
+.create-btn:hover {
+  background-color: #edfdff;
+}
+.placehol::placeholder {
+  font-size: 13px;
+  color: gray;
+}
+
+/* border colors */
+.border-form {
+  border-color: #e1e1e1;
+}
+.border-field {
+  border-color: #b5b5b5;
+}
+
+/* text colors */
+.forget-color {
+  color: #0066c0;
+}
+.forget:hover {
+  text-decoration: underline;
+  color: rgb(251 146 60);
+}
+.gray {
+  color: gray;
+}
+/* font sizes */
+.label-font {
+  font-size: 13px;
+}
+
+/* box shadow */
+.field-shadow:focus {
+  box-shadow: 0px 0px 5px 3px #c1dfe4;
+}
+
+/*-------------------------------Product Page Style --------------------------------------------------------------*/
+.image-item:hover {
+  box-shadow: 0px 0px 5px 3px #c1dfe4;
+}
+.arrow {
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  width: 0px;
+  height: 0px;
+}
